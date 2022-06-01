@@ -1,9 +1,4 @@
-/*
-Title: grep -- Binary file (standard input) matches
-Description: grep -- Binary file (standard input) matches
-Date: 2015/03/15
-Tags: linux
-*/
+
 
 # grep -- Binary file (standard input) matches
 

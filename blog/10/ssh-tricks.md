@@ -1,8 +1,4 @@
-/*
-Title: SSH Tricks
-Description: SSH Tricks
-Date: 2011/08/01
-*/
+
 
 # SSH Tricks
 

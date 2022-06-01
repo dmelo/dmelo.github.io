@@ -1,9 +1,4 @@
-/*
-Title: Mount Image as Device
-Description: How to mount an image file as if it was an actual hard drive.
-Date: 2017/03/21
-Tags: linux
-*/
+
 
 # Mount Image as Device
 

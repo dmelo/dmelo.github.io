@@ -1,9 +1,4 @@
-/*
-Title: vimf - vim finding files
-Description: shortcut to have vim finding files, without the need to specify the whole path
-Date: 2016/02/12
-Tags: linux,vim
-*/
+
 
 # vimf - vim finding files
 

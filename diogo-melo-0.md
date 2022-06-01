@@ -1,8 +1,4 @@
-/*
-Title: Diogo Melo?
-Description: <img src="/drupal/sites/default/files/diogo-2_0.jpg" alt="Diogo Melo" style="floatleft; padding10px;">
-Date: 2011/02/19
-*/
+
 
 <img src="/drupal/sites/default/files/diogo-2_0.jpg" alt="Diogo Melo" style="float:left; padding:10px;">
 

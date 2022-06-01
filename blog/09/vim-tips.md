@@ -1,8 +1,4 @@
-/*
-Title: Vim Tips
-Description: All my friends know that I'm a big fun of Vim. I use vim to program in C++, Java, PHP, javascript and whatever language I have to. I do that because vim is simple and powerful. It supports regular expressions to make search and replace texts. It leads you to the function's main page with a simple shortcut.You can use Vim as a development environment for your projects. Instead of use one IDE for each language you program you can just use Vim.If you use vim for more than 1 year so you probably know most of the tips I'm giving here.
-Date: 2009/11/29
-*/
+
 
 # Vim Tips
 

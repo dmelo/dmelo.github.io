@@ -1,9 +1,4 @@
-/*
-Title: Using dd and lzma to backup and restore a disk
-Description: This post show the commands to backup and restore a disk, using dd and lzma
-Date: 2015/10/14
-Tags: linux,dd,backup
-*/
+
 
 # Using dd and lzma to backup and restore a disk
 

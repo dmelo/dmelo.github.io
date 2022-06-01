@@ -1,9 +1,4 @@
-/*
-Title: SQL Query To Get Descendants And Ancestors From A Tree, With CTE
-Description: Using CTEs
-Date: 2017/04/18
-Tags: sql,mariadb,cte,tree,docker
-*/
+
 
 # SQL Query To Get Descendants And Ancestors From A Tree, With CTE
 

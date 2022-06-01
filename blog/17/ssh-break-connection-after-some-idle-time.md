@@ -1,9 +1,4 @@
-/*
-Title: SSH Break Connection After Some Idle Time
-Description: How to avoid losing connection due to connection timeout
-Date: 2017/03/28
-Tags: linux,ssh
-*/
+
 
 For some reason, while I'm at work, if I leave a SSH connection sitting idle for
 a few minutes, I lose the connection. It get stuck, whatever I type, doesn't

@@ -1,8 +1,4 @@
-/*
-Title: VIM and PHP - The best IDE for a Great Language
-Description: The more I know vim, the more I love it. It's nobility relies on simplicity. It's considerable easy to extends doesn't require tons of RAM memory and so on.Enough of bla bla bla.First of all, install the plugin to extract vimballs. Vimballs are VIM packages, like ".deb" for dpkg. You can find the installer here...
-Date: 2011/09/05
-*/
+
 
 # VIM and PHP - The best IDE for a Great Language
 

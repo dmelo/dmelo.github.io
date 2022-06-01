@@ -1,9 +1,4 @@
-/*
-Title: Google Chrome version 54.0.2824.0 dev (64-bit) is very slow 
-Description: My experience making sourdough starter
-Date: 2016/08/21
-Tags: Chrome
-*/
+
 
 # Google Chrome version 54.0.2824.0 dev (64-bit) is very slow
 

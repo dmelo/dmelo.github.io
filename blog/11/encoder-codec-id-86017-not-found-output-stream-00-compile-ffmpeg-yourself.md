@@ -1,8 +1,4 @@
-/*
-Title: Encoder (codec id 86017) not found for output stream #0.0 -- Compile ffmpeg yourself
-Description: I'm using Ubuntu 11.04 and experiencing some problems with ffmpeg. I found this blog post that suggests to compile x264 and ffmpeg yourself. But use x264 from Ubuntu and compile just ffmpeg is enough. So, here are the steps. Start by removing ffmpeg and making sure x264 is properly installed.
-Date: 2011/10/25
-*/
+
 
 # Encoder (codec id 86017) not found for output stream #0.0 -- Compile ffmpeg yourself
 

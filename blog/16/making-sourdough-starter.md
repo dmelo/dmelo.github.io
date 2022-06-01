@@ -1,9 +1,4 @@
-/*
-Title: Making sourdough starter
-Description: My experience making sourdough starter
-Date: 2016/08/09
-Tags: cooking
-*/
+
 
 # Making sourdough starter
 

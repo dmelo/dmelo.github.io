@@ -1,9 +1,4 @@
-/*
-Title: Command line httpd markdown server
-Description: Command line httpd markdown server
-Date: 2016/08/28
-Tags: markdown,web-development
-*/
+
 
 # Command line httpd markdown server
 

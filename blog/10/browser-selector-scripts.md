@@ -1,10 +1,4 @@
-/*
-Title: Browser Selector Scripts
-Description: 
-Date: 2010/07/06
-*/
-
-![browser compatibility](http://diogomelo.net/drupal/sites/default/files/browsers_0.png)
+## browser compatibility
 
 Source: http://www.alphadigital.cl/blog/lang/en-us/resetear-estilos-css.html
 

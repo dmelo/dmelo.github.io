@@ -1,8 +1,4 @@
-/*
-Title: Improve Page Load Time Performance by Pre-Loading Images
-Description: It's very common to have websites that includes images on the layout. Let's go through how the browser works. First, it downloads the HTML, which references the CSS files. Then it downloads the CSS files in parallel. After interpret the CSS files, it starts downloading the objects referenced by those CSS files.
-Date: 2011/07/20
-*/
+
 
 # Improve Page Load Time Performance by Pre-Loading Images
 

@@ -1,8 +1,4 @@
-/*
-Title: Crawlers - Get rid of the "403 Access Forbidden" through PROXY
-Description: Well, as I started out my research on my master degree, one of my first tasks was to get the abstract and citations information about thousands of scientific articles. I intend to use this data at the machine learning classes. There is a lot of systems that organizes articles. One of them is the ACM Portal. There you can perform really good searching. It's a very positive point for the system. What they doesn't seems to have is an API for automated searching.
-Date: 2011/03/28
-*/
+
 
 # Crawlers - Get rid of the "403 Access Forbidden" through PROXY
 

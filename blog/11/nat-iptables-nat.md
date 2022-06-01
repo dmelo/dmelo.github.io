@@ -1,8 +1,4 @@
-/*
-Title: NAT - iptables -nat
-Description: <p>Everytime I have to configure NAT I end up Googling for it. Here is the set of commands that must be done in order to do NAT.</p>
-Date: 2011/11/20
-*/
+
 
 # NAT - iptables -nat
 

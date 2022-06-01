@@ -1,8 +1,4 @@
-/*
-Title: Using a printer shared by another CUPS
-Description: To register a printer shared by another CUPS, you can simply use the command `lpadmin -p printer -E -v ipp//server/printers/printer`.
-Date: 2012/11/01
-*/
+
 
 # Using a printer shared by another CUPS
 

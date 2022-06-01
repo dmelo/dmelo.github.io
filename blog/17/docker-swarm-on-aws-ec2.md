@@ -1,10 +1,4 @@
-/*
-Title: Docker Swarm on AWS EC2 Using Fedora 25
-Description: This post describes, step by step, how to get an EC2 instance
-running Docker to join a swarm
-Date: 2017/03/20
-Tags: linux,ec2,docker,docker-swarm
-*/
+
 
 # Docker Swarm on AWS EC2 Using Fedora 25
 

@@ -1,9 +1,4 @@
-/*
-Title: Mysqldump with SSH Tunnel
-Description: How to make mysqldump work with an SSH tunner
-Date: 2017/11/03
-Tags: linux ssh mysql
-*/
+
 
 # Mysqldump with SSH Tunnel
 

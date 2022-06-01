@@ -1,9 +1,4 @@
-/*
-Title: Fastest and easiest way to have an http server running
-Description: If you just want to have a http server running, what is the easiest way?
-Date: 2015/11/16
-Tags: web-development
-*/
+
 
 # Fastest and easiest way to have an http server running
 

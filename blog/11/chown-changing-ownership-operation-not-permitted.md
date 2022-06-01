@@ -1,8 +1,4 @@
-/*
-Title: chown: changing ownership of `???': Operation not permitted
-Description: It seems basic usage of linux but I found out just today. If you want a user to be allowed to change group ownership of his files you must first use the command usermod (as root).usermod -a -G group1 user1...
-Date: 2011/08/01
-*/
+
 
 # chown: changing ownership of \`???': Operation not permitted
 

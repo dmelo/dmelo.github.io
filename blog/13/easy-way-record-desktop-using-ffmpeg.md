@@ -1,9 +1,4 @@
-/*
-Title: Easy way to record desktop using ffmpeg
-Description: Just use the following command to record the desktop with audio to a mkv
-Date: 2013/06/08
-Tags: linux,ffmpeg
-*/
+
 
 # Easy way to record desktop using ffmpeg
 

@@ -1,11 +1,4 @@
-/*
-Title: How I solved when my printing was too weak and light
-Description: I have built an Mendel Prusa I3 Rework, on this final steps of
-calibration, something wrong was happening that was making my printings too
-weak, light and fragile.
-Date: 2015/11/04
-Tags: 3dprinter
-*/
+
 
 # How I solved when my printing was too weak and light
 

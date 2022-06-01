@@ -1,8 +1,4 @@
-/*
-Title: John D. Rockefeller
-Description: 
-Date: 2009/09/18
-*/
+
 
 # John D. Rockefeller
 

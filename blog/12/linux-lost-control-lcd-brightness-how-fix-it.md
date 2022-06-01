@@ -1,8 +1,4 @@
-/*
-Title: Linux - Lost control on LCD Brightness - How to fix it
-Description: Today When I pressed the keys to switch up/down the brightness of my LCD it didn't respond. Googling around, I've found a post that helped solving the problem.
-Date: 2013/06/01
-*/
+
 
 # Linux - Lost control on LCD Brightness - How to fix it
 

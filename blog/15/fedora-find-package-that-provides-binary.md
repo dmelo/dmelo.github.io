@@ -1,9 +1,4 @@
-/*
-Title: Fedora - Find package that provides a binary file
-Description: 
-Date: 2015/10/07
-Tags: linux,fedora
-*/
+
 
 # Fedora - Find package that provides a binary file
 

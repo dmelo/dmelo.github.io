@@ -1,8 +1,4 @@
-/*
-Title: Zend Exception Message: Cannot save a Row unless it is connected
-Description: Accordingly with this blog, this is an exception related to Zend_Db_Table_Row. It arises because the object that is being saved lost (somehow) it's reference to the the table it belongs. To restore it's reference (and solve this issue) you just have to call setTable before saving the object...
-Date: 2012/01/10
-*/
+
 
 # Zend Exception Message: Cannot save a Row unless it is connected
 

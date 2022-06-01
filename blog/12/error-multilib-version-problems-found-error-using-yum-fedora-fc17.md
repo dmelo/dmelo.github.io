@@ -1,8 +1,4 @@
-/*
-Title: Error:  Multilib version problems found -- Error using yum on Fedora fc17
-Description: <p>I was trying to install wine on my Fedora fc17 and getting this error message</p>
-Date: 2012/10/27
-*/
+
 
 # Multilib version problems found -- Error using yum on Fedora fc17
 

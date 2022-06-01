@@ -1,9 +1,4 @@
-/*
-Title: You2Better
-Description: A Web server that let you easily download audio files.
-Date: 2016/03/05
-Tags: linux,web-development
-*/
+
 
 # You2Better
 

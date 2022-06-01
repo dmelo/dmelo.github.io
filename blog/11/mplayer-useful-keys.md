@@ -1,8 +1,4 @@
-/*
-Title: Mplayer useful keys
-Description: Here goes a small list of useful mplayer keys...
-Date: 2011/07/12
-*/
+
 
 # Mplayer useful keys
 

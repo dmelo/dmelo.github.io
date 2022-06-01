@@ -1,8 +1,4 @@
-/*
-Title: Setting header parameters on apache using htaccess - error 500 Internal server error
-Description: The first post of the year is about an error that I got while trying to set header parameters from htaccess. The intention is to make leverage browser caching on some objects of dicno.net. The syntax to set cache (or any other header parameter) is quite simple.
-Date: 2010/01/03
-*/
+
 
 # Setting header parameters on apache using htaccess - error 500 Internal server error
 

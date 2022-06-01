@@ -1,15 +1,8 @@
-/*
-Title: i3 Window manager review
-Description: This post makes a review on the i3 window manager. I have used a few window managers so far and I have to admit, i3 is awesome.
-Date: 2015/04/02
-Tags: linux
-*/
-
 I have to admit, when it comes to window managing system, my taste is a bit
 peculiar. But I'm glad to see other people also share my taste. I think the
 simple the wm is, the better. Here is why I think that way.
 
-/* frieldlyness */
+## frieldlyness
 User friendly wm tend to lose on productivity on the long run. If a user is
 starting to use a new wm, friendly features are very useful. For experienced
 users, those features are useless or not efficient enought. So friendliness
@@ -17,7 +10,7 @@ not only should not be a priority, it should be avoided, on the long run. The
 priority should be efficient controls, shortcuts that empowers you to manage
 your software efficiently.
 
-/* memory footprint */
+## memory footprint
 The memory footprint of wms like Gnome 3, Unity and KDE are too large. An
 obvious argument is that wms like i3 are ideal for old machines. But more than
 that, it gives an advantage even on modern systems. If your system have more
@@ -28,7 +21,7 @@ useful.
 So, given that, even in a modern system, it will sometimes perform swapping,
 to use a lightway wm, instead of a heavy one, will imply on a faster system.
 
-/* peace of mind */
+## peace of mind
 After you have mastered your lightweight wm, the advantages are huge. The
 translation between what you want and how to do it comes easy.
 

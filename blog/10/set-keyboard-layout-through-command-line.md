@@ -1,8 +1,4 @@
-/*
-Title: Set Keyboard Layout Through Command Line
-Description: I'm the kind of guy that don't enjoy the sort of answer "click here" or "click there" to solve any kind of problems related to Linux. Linux is build to be set by configuration files and command line programs (which changes the configuration files), not clicks. It's not Windows for God sake. The click click solutions just sucks because it's hard automate.
-Date: 2012/03/19
-*/
+
 
 # Set Keyboard Layout Through Command Line
 

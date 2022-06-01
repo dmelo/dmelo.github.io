@@ -1,9 +1,4 @@
-/*
-Title: prunepath - a way to prune path to a threshold size
-Description: a shell script that removes files from a path until it's size reaches a given threashold.
-Date: 2016/04/02
-Tags: linux,sh
-*/
+
 
 # prunepath - a way to prune path to a threshold size
 

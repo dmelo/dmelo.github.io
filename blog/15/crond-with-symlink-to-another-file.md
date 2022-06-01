@@ -1,9 +1,4 @@
-/*
-Title: Cron.d with symlink to another file
-Description: Cron.d not always work well with symlinks, here is how to make it work.
-Date: 2015/11/05
-Tags: linux
-*/
+
 
 # Cron.d with symlink to another file
 

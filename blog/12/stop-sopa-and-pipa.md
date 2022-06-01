@@ -1,8 +1,4 @@
-/*
-Title: Stop SOPA and PIPA
-Description: I'm also against SOPA and PIPA and I find it very nice that so many and important web sites are lobbing against it...
-Date: 2012/01/18
-*/
+
 
 # Stop SOPA and PIPA
 

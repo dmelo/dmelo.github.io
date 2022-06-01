@@ -1,9 +1,4 @@
-/*
-Title: Projects
-Description: 
-PageType: page
-PageTitle: Projects
-*/
+
 
 # Projects
 

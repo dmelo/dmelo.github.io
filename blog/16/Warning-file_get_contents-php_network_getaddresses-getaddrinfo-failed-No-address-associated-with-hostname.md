@@ -1,9 +1,4 @@
-/*
-Title: Warning file_get_contents() php_network_getaddresses getaddrinfo failed No address associated with hostname
-Description: What happend when I've got this error
-Date: 2016/05/05
-Tags: web-development,php,apache
-*/
+
 
 # Warning file\_get\_contents() php\_network\_getaddresses getaddrinfo failed No address associated with hostname
 

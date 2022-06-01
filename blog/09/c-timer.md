@@ -1,8 +1,4 @@
-/*
-Title: C++ - Timer
-Description: Do you know there times when you just want to measure the time that some peace of code takes to run? And then you have to think about gettimeofday, timezone, timeval and so on... I just wrote a class that do all the work. You call start() when you want to start the timer and end(), to stop it. You can take the diff, between start and end, as an struct timeval or just transform the result to string and throw it to cout... The class is timer. Here is the header...
-Date: 2010/02/16
-*/
+
 
 # C++ - Timer
 

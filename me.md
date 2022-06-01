@@ -1,9 +1,4 @@
-/*
-Title: Me
-Description: 
-PageType: page
-PageTitle: Me
-*/
+
 
 ![Diogo Melo](assets/diogo.jpg)
 

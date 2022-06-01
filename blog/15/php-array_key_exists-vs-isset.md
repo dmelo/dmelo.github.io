@@ -1,10 +1,4 @@
-/*
-Title: PHP: array_key_exists vs. isset
-Description: This post compares two functions that have very similar behaviour,
-for arrays, but very difference performance.
-Date: 2015/11/21
-Tags: php,performance
-*/
+
 
 # PHP: array\_key\_exists vs. isset
 

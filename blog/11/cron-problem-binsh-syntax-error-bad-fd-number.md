@@ -1,8 +1,4 @@
-/*
-Title: Cron Problem - /bin/sh: Syntax error: Bad fd number
-Description: Today I find out an interesting fact. Cron doesn't like "&gt;&" at all. Here is an example of a problematic cron line...
-Date: 2011/06/17
-*/
+
 
 # Cron Problem - /bin/sh: Syntax error: Bad fd number
 

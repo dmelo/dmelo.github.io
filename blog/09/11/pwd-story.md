@@ -1,9 +1,3 @@
-/*
-Title: pwd Story
-Description: This post is just a geek curious stuff about Linux. pwd is a shell built-in command that show you the working directory. Good part of the built-in commands also have an external program that, in theory, behave just like the built-in one. Well, that's the theory, in practice some external commands behave differently than the respective built-in. This post shows the example of the pwd command. When I type pwd here, the return is /home/dmelo. Now comes the weird demo. Create a symbolic link to /tmp into your home directory
-Date: 2009/11/21
-*/
-
 # pwd Story
 
 This post is just a geek curious stuff about Linux.
