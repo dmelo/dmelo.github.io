@@ -1,3 +1,5 @@
+# i3 window manager review
+
 I have to admit, when it comes to window managing system, my taste is a bit
 peculiar. But I'm glad to see other people also share my taste. I think the
 simple the wm is, the better. Here is why I think that way.

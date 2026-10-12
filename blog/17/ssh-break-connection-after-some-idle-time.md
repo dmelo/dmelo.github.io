@@ -1,5 +1,7 @@
 
 
+# SSH connection breaks after some idle time
+
 For some reason, while I'm at work, if I leave a SSH connection sitting idle for
 a few minutes, I lose the connection. It get stuck, whatever I type, doesn't
 show on the remote shell. To fix this problem, I have set two variables, on my

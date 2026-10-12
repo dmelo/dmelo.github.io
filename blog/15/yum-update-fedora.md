@@ -1,3 +1,5 @@
+# yum update fails on Fedora: repository failed, not enough cached data
+
 ```
 yum update
 Loaded plugins: langpacks
