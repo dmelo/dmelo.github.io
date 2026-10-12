@@ -1,26 +1,26 @@
 
 
-# How to invert y axis to solve mirrored printing on mendel prusa i3 rework 
+# How to invert Y axis to solve mirrored printing on Mendel Prusa i3 Rework 
 
 
-When I was printing the first pieces on my I3 rework I've notice that it was
-comming mirrored on the Y axis. I'm using the
+When I was printing the first pieces on my i3 Rework, I noticed that they were
+coming out mirrored on the Y axis. I'm using the
 [Marlin_Prusai3_reprap_pt](http://reprap.org/wiki/Prusa_i3_Rework_Firmware)
-firmware. On the instructions, the only file that should be edited is the
+firmware. In the instructions, the only file that should be edited is the
 *Configuration.h*.
 
-I edited everything there was to change on the *Configuration.h* file, flushed
-to the Arduino Mega 2560 and started printing (with the pieces mirrored).
+I edited everything there was to change on the *Configuration.h* file, flashed
+it to the Arduino Mega 2560 and started printing (with the pieces mirrored).
 
 After googling it, I found this post [http://www.thefrankes.com/wp/?p=2651](http://www.thefrankes.com/wp/?p=2651), which was very useful. In essence, it says to change *INVERT_Y_DIR*
 and *Y_HOME_DIR* in *Configuration.h* but ALSO to switch the pins *Y_MAX_PIN*
 and  *Y_MIN_PIN* on the file *pins.h*.
 
-Mind the fact that *#define Y_MIN_PIN* appears many times on *pins.h*. You have
-to fine the right lines, to the change, based on your *motherboard*.
+Mind the fact that *#define Y_MIN_PIN* appears many times in *pins.h*. You have
+to find the right lines to change, based on your *motherboard*.
 
 After changing both the *Configuration.h* and *pins.h* and uploading the new
-firmware to the mega, the Y axis was inverted and the new printings was no
+firmware to the Mega, the Y axis was inverted and the new prints were no
 longer inverted.
 
 Here is my git diff of the changes I've made:

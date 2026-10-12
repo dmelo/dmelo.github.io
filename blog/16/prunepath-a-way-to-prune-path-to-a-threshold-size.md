@@ -3,15 +3,15 @@
 # prunepath - a way to prune path to a threshold size
 
 When using [you2better](https://github.com/dmelo/you2better) the system will
-download the stream into cache files. The systema have no options to specify
+download the stream into cache files. The system has no option to specify
 the maximum size that that cache dir can have. I could either implement that
 on you2better, or create a new (small) script for this task. The advantage of
 creating it as a separate project is that I can use it elsewhere.
 
 [prunepath](https://github.com/dmelo/prunepath) is a shell script that takes two
-arguments DIR and SIZELIMIT. The first, can be a relative path and must point to
+arguments, DIR and SIZELIMIT. The first can be a relative path and must point to
 a directory. SIZELIMIT specifies a size threshold. The script will keep deleting
-files on the specified path until the size is below the threshold.
+files in the specified path until the size is below the threshold.
 
-I'm using this with crond the amuzi.me server to keep the cache size of the
+I'm using this with crond on the amuzi.me server to keep the cache size of
 you2better under control.

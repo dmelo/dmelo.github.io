@@ -2,7 +2,7 @@
 
 # Stop SOPA and PIPA
 
-I'm also against SOPA and PIPA and I find it very nice that so many and important web sites are lobbing against it:
+I'm also against SOPA and PIPA and I find it very nice that so many important websites are lobbying against it:
 
 [https://www.facebook.com/FacebookDC?sk=app_329139750453932](https://www.facebook.com/FacebookDC?sk=app_329139750453932)
 

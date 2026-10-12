@@ -6,7 +6,7 @@ The code is written in python and is very easy to use. It can be found here
 [https://github.com/dmelo/vsnm](https://github.com/dmelo/vsnm).
 
 I'm very angry about the way NetworkManager manages my network. Not because it
-uses graphical interface. But because when I want to change something by command
+uses a graphical interface. But because when I want to change something by command
 line, there comes NetworkManager minutes/seconds afterwards to creep everything.
 I find it very hard to conciliate NetworkManager with command line management.
 

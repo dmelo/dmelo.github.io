@@ -2,17 +2,17 @@
 
 # Cloning a Virtualbox Machine
 
-You can either have the installation that comes with Ubuntu or the Oracle's release
+You can either have the installation that comes with Ubuntu or the Oracle's release.
 
 ### Oracle's release
 
-If you are using the Oracle's release ([https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)) then everything you need to do is right click on your machine and "clone", on the Virtualbox's management interface.
+If you are using the Oracle's release ([https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)) then everything you need to do is right-click on your machine and "clone", on the Virtualbox's management interface.
 
 
 
 ### Ubuntu's version
 
-However, if you are using the version that comes on the Ubuntu's repository, then you need to do it manually, and it is a little bit more complicated then just copy the VDI file. Because of the UUID of the VDI, that ID must be different for each machine. But it's easy. Let's say your image is Ubuntu1.vdi and you want a Ubuntu2 machine:
+However, if you are using the version that comes in Ubuntu's repository, then you need to do it manually, and it is a little bit more complicated than just copying the VDI file. Because of the UUID of the VDI, that ID must be different for each machine. But it's easy. Let's say your image is Ubuntu1.vdi and you want an Ubuntu2 machine:
 
     vboxmanage clonevdi ../Ubuntu1/Ubuntu1.vdi Ubuntu2.vdi
 
@@ -22,6 +22,6 @@ Now, if you start your machine, the network interface will have the same MAC add
 
 ### On any release
 
-Supposing your guest system is also Linux (Ubuntu in my case), start your machine and you will notice it's getting trouble setting the network. You need to edit the file /etc/udev/rules.d/70-persistent-net.rules . There will be two lines effective working. Delete the line that says about "eth0". On the line about "eth1", replace the "eth1" by "eth0". 
+Supposing your guest system is also Linux (Ubuntu in my case), start your machine and you will notice it's having trouble setting up the network. You need to edit the file /etc/udev/rules.d/70-persistent-net.rules . There will be two lines effectively working. Delete the line about "eth0". On the line about "eth1", replace the "eth1" with "eth0". 
 
 Done, reboot and you are good to go.

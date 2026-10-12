@@ -2,16 +2,16 @@
 
 # Zend Exception Message: Cannot save a Row unless it is connected
 
-Accordingly with [this blog](http://gustavostraube.wordpress.com/2010/05/11/zend-framework-cannot-save-a-row-unless-it-is-connected/) this is an exception related to `Zend_Db_Table_Row`. It arises because the object that is being saved lost (somehow) it's reference to the the table it belongs.
+According to [this blog](http://gustavostraube.wordpress.com/2010/05/11/zend-framework-cannot-save-a-row-unless-it-is-connected/) this is an exception related to `Zend_Db_Table_Row`. It arises because the object that is being saved lost (somehow) its reference to the table it belongs to.
 
-To restore it's reference (and solve this issue) you just have to call `setTable` before saving the object:
+To restore its reference (and solve this issue) you just have to call `setTable` before saving the object:
 
     $row->setTable(new DbTable_User());
     $row->save();
 
 
 
-In my case, I'm losing the reference to the table because I'm storing the object on a session (with *Zend_Session_Namespace*). Since there is, at least, three places where I have to save the row stored by the session, I decided to rewrite the save method, just like this:
+In my case, I'm losing the reference to the table because I'm storing the object on a session (with *Zend_Session_Namespace*). Since there are, at least, three places where I have to save the row stored by the session, I decided to rewrite the save method, just like this:
 
 <div class="vim"><pre><span class="lnr"> 1 </span><span class="Special">&lt;?php</span>
 
@@ -37,7 +37,7 @@ In my case, I'm losing the reference to the table because I'm storing the object
 
 
 
-<p>And then, at the DbTable_User.php I just have to set the class DbTable_UserRow as being the row class for the table user:</p>
+<p>And then, in DbTable_User.php I just have to set the class DbTable_UserRow as being the row class for the table user:</p>
 
 
 

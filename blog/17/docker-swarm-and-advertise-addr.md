@@ -1,9 +1,9 @@
 # Docker Swarm and Advertise Address
 
-When your network interface have many IPs attached to it, make sure you specify
+When your network interface has many IPs attached to it, make sure you specify
 the advertise-addr both when initiating and joining nodes to the cluster.
-Otherwise, you may get one sided communication, causing the log to look
-something like this
+Otherwise, you may get one-sided communication, causing the log to look
+something like this:
 
 Machine A (`docker swarm init --listen-addr 0.0.0.0 --advertise-addr X.X.X.X`):
 
@@ -36,8 +36,8 @@ Apr 20 19:18:40 oregon-00 dockerd[32597]: time="2017-04-20T19:18:40.453870232Z" 
 Apr 20 19:18:42 oregon-00 dockerd[32597]: time="2017-04-20T19:18:42.453479405Z" level=warning msg="memberlist: Refuting a suspect message (from: nvirginia-00-43f6a8884d79)"
 ```
 
-This error is happening because machine B has published it's private address and
-machine A is not being able to reach it. To fix this problem I had to use
+This error is happening because machine B has published its private address and
+machine A is not able to reach it. To fix this problem I had to use
 `docker swarm join` with the `--advertise-addr` option, specifying the right
 IP address.
 

@@ -4,7 +4,7 @@
 
 Here goes a small list of useful mplayer keys:
 
-* f - full script
+* f - full screen
 * z & x - delay subtitle
 * j - enable/disable subtitles
 * - & + - delay audio
@@ -12,4 +12,4 @@ Here goes a small list of useful mplayer keys:
 
 That's it. Those are the keys I use the most.
 
-While using mplayer to listen music I like the paramenter "-shuffle" that play the files on a random order.
+While using mplayer to listen to music I like the parameter "-shuffle" that plays the files in a random order.

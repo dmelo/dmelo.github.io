@@ -6,14 +6,14 @@ I'm using Ubuntu 11.04 and experiencing some problems with ffmpeg. I found this 
 
 
 
-The post suggests to compile x264 and ffmpeg yourself. But use x264 from Ubuntu and compile just ffmpeg is enough. So, here are the steps. Start by removing ffmpeg and making sure x264 is properly installed.
+The post suggests compiling x264 and ffmpeg yourself. But using x264 from Ubuntu and compiling just ffmpeg is enough. So, here are the steps. Start by removing ffmpeg and making sure x264 is properly installed.
 
     apt-get remove ffmpeg
     apt-get update
     apt-get install libx264-116 libx264-dev x264 libfaac-dev libfaac0 yasm libmp3lame-dev libopencore-amrwb-dev libtheora-dev libogg-dev libvorbis-dev libvpx-dev libxvidcore-dev
     apt-get autoremove
 
-Then, login as root, download, compile and install ffmpeg:
+Then, log in as root, download, compile and install ffmpeg:
 su -
 svn checkout svn://svn.ffmpeg.org/ffmpeg/trunk ffmpeg
 cd ffmpeg
@@ -21,4 +21,4 @@ cd ffmpeg
 make
 make install
 
-It's done, you can now use ffmpeg normally (in may case, ripping mp3 from a video :D )
+It's done, you can now use ffmpeg normally (in my case, ripping mp3 from a video :D )

@@ -2,18 +2,18 @@
 
 # SQL Query To Get Descendants And Ancestors From A Tree, With CTE
 
-CTEs are comming to MariaDB and most likely will arrive on MySQL soon as well.
-Its is alreay implemented on MariaDB 10.2, development code. The easiest way to
-get MariaDB 10.2 running, if you have Docker is using:
+CTEs are coming to MariaDB and most likely will arrive in MySQL soon as well.
+It is already implemented in MariaDB 10.2, development code. The easiest way to
+get MariaDB 10.2 running, if you have Docker, is using:
 
 ```bash
 docker run -i -p 127.0.0.1:3307:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -t cytopia/mariadb-10.2
 ```
 
-Handling trees on SQL is elusive, without CTEs (or Oracle's CONNECTED BY) there
-is no data type that performs well for all cases. This is well documented on 
-Bill Karwin's [SQL Antipatters](https://pragprog.com/book/bksqla/sql-antipatterns).
-With CTEs, it is possible to recusively define a temporary table. This way, it
+Handling trees in SQL is elusive; without CTEs (or Oracle's CONNECT BY) there
+is no data type that performs well for all cases. This is well documented in 
+Bill Karwin's [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns).
+With CTEs, it is possible to recursively define a temporary table. This way, it
 is easy to handle SQL trees using the naive data structure:
 
 ```sql

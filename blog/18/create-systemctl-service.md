@@ -1,6 +1,6 @@
 # Create systemctl Services
 
-Once you wrote your file.service file, you have to copy it to
+Once you have written your file.service file, you have to copy it to
 `/lib/systemd/system`, create a symbolic link to /etc/systemd/system and reload
 the daemon:
 

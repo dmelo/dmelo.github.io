@@ -3,11 +3,11 @@
 # Cron.d with symlink to another file
 
 If you place a symlink inside `/etc/cron.d/`, odds are that it isn't gonna work.
-I had this problem for the first time today, then I've decided to write about it.
+I had this problem for the first time today, so I decided to write about it.
 The daemon will only follow the symlink *if the file is also owned by root*.
 
 Moreover, make sure the file is not executable and writable only by the owner.
-Also, make sure you reload cron daemon after the changes.
+Also, make sure you reload the cron daemon after the changes.
 
 Here is a piece of cron's man page:
 

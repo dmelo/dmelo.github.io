@@ -2,18 +2,18 @@
 
 # vimf - vim finding files
 
-Did you ever got bored of calling vim with a huge path? It can happen pretty often,
-specially when programming with Java. The command would go something like this:
+Did you ever get bored of calling vim with a huge path? It can happen pretty often,
+especially when programming with Java. The command would go something like this:
 
     vim src/main/java/org/company/client/project/subproject/module/base/Entity.java
 
 Even with the autocomplete feature provided by bash this is a very tedious task.
-To help me with this, I have created a function, named `vimf`, that interpret the second argument as
+To help me with this, I have created a function, named `vimf`, that interprets the second argument as
 the file name, not the full path. I would open the `Entity.java` just by typing:
 
     vimf Entity.java
 
-To make it work nicely, I have appended my `~/.bashrc` with the funciton definition:
+To make it work nicely, I have appended my `~/.bashrc` with the function definition:
 
 ```bash
 function vimf ()
@@ -23,8 +23,8 @@ function vimf ()
 
 ```
 
-*Update [2016-03-09]*: I also added an alias do `f='find -name'` to save a few
-keystrokes inside vim, to run commands linke `tabe 'f Entity.java'`. Append
+*Update [2016-03-09]*: I also added an alias `f='find -name'` to save a few
+keystrokes inside vim, to run commands like `tabe 'f Entity.java'`. Append
 ~/.bashrc with the following:
 
 ```bash

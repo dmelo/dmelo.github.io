@@ -6,7 +6,7 @@ I came across a piece of code where there was a `return` statement inside the
 `try` and the `finally` with some code as well. I don't have much experience
 with Java and, until today, `return` meant end of execution for me. Then,
 convinced that there was something fishy with that piece of code, I decided to
-put it to a test.
+put it to the test.
 
 I wrote the following code inside `A.java`:
 
@@ -40,9 +40,9 @@ finally
 t: 2
 ```
 
-See that it is printing the "finally" line? Today I've learned it called the
-finally block even if you return the method inside the `try`. My next tought
-was: in what situation Java doesn't run the `finally` block? I came across
+See that it is printing the "finally" line? Today I've learned it calls the
+finally block even if you return from the method inside the `try`. My next thought
+was: in what situation doesn't Java run the `finally` block? I came across
 a [StackOverflow Question](http://stackoverflow.com/questions/65035/does-finally-always-execute-in-java?page=1&tab=votes#tab-top)
 that solved the question. As stated by [jodonnell](http://stackoverflow.com/users/4223/jodonnell),
 Java will not run the `finally` block if one of the following happens:

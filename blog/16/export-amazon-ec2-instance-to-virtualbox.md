@@ -9,12 +9,12 @@ physical machine. The
 to do a job like this is very restricted:
 
 - the EC2 instance may have only one EBS volume attached to it;
-- there is no way to do it using only the Web console, you have to use the cli
+- there is no way to do it using only the Web console, you have to use the CLI
 tool;
 - you can only export instances you have previously imported.
 
 The approach proposed on this post doesn't rely on that Amazon tool and,
-therefore is not bound by those restrictions. The basic idea is:
+therefore, is not bound by those restrictions. The basic idea is:
 
 - attach the EBS volume of the target machine on another instance;
 - use dd to dump the volume into a file;
@@ -22,7 +22,7 @@ therefore is not bound by those restrictions. The basic idea is:
 - reconfigure the image so that it works outside of the cloud;
 - convert the raw image to the desired VM.
 
-The following sections go in details about how to accomplish each
+The following sections go into detail about how to accomplish each
 described step.
 
 Before executing the procedure
@@ -30,8 +30,8 @@ Before executing the procedure
 
 Bear in mind that the end result will be the EC2 instance running on VirtualBox
 (or something similar). You will probably want to log on the tty console.
-By default, you access your EC2 instance through ssh, using certificates, so
-the standard user (in my case fedora) doen't have a password. Log into your
+By default, you access your EC2 instance through SSH, using certificates, so
+the standard user (in my case fedora) doesn't have a password. Log into your
 machine and set a password for that user:
 
 ```bash
@@ -47,7 +47,7 @@ On the Amazon console, do the following steps:
 2. detach the root volume from that machine;
 3. attach the volume on another (auxiliary) machine (it must be attached as a
 secondary volume);
-4. install lzma (some distros doesn't include it by default);
+4. install lzma (some distros don't include it by default);
 5. log into the auxiliary machine and dump the EBS volume into a file.
 
 Considering it is attached as `/dev/xvdf`, you can use the following command
@@ -60,16 +60,16 @@ dd if=/dev/xvdf | lzma -z -0 > /opt/ec2.img.lzma
 This command might take a while. After it is done, you can copy
 `/opt/ec2.img.lzma` to your local machine or any other convenient place.
 
-* Obs.: If you rather not turn off the EC2 instance, during this procedure,
+* Obs.: If you would rather not turn off the EC2 instance during this procedure,
 you can try to make a snapshot of the root EBS and create another EBS from it.
-Then, perform the steps on this section on that cloned EBS.
+Then, perform the steps in this section on that cloned EBS.
 
 
 Reconfigure the image so that it works outside of the cloud
 -----------------------------------------------------------
 
 This step ended up being easier than I had expected. Start by uncompressing
-the image
+the image:
 
 ```bash
 lzma -cd ec2.img.lzma > ec2.img
@@ -82,7 +82,7 @@ block file. Use fdisk:
 fdisk -l ec2.img
 ```
 
-The offset is equal to `Start` times sector size. In my case 2048 times 512,
+The offset is equal to `Start` times sector size. In my case, 2048 times 512,
 which equals 1048576. Now, I can mount the img file as a partition:
 
 
@@ -91,7 +91,7 @@ sudo mount -o loop,offset=1048576 ec2.img /mnt/disk
 ```
 
 As root, use chroot to change the base to the ec2 system. It is also necessary
-to disable the cloud specific services. The last thing I had to do was to
+to disable the cloud-specific services. The last thing I had to do was to
 include a line on `/etc/security/access` to enable login through the tty console.
 
 ```bash
@@ -113,7 +113,7 @@ Convert the raw image to the desired VM
 ---------------------------------------
 
 In this post, I show how to make a VirtualBox VM out of it. So, this last
-section varies accordingly with your goal. To make the VirtualBox VM, start
+section varies according to your goal. To make the VirtualBox VM, start
 by converting from raw to VDI using VBoxManage:
 
 ```bash

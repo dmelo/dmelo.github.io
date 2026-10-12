@@ -2,7 +2,7 @@
 
 # NAT - iptables -nat
 
-Everytime I have to configure NAT I end up Googling for it. Here is the set of commands that must be done in order to do NAT.
+Every time I have to configure NAT I end up Googling for it. Here is the set of commands that must be done in order to do NAT.
 
 	# delete old configuration, if any
 	#Flush all the rules in filter and nat tables

@@ -4,7 +4,7 @@ Uma dúvida que tinha era em relação a quais as taxas de fato incidem sobre o
 dinheiro que aplico no tesouro direto: Existem pegadinhas? Taxas que aparecem
 apenas nas entrelinhas?
 
-Decidi então aplicar R$500 distribuidos em dois títulos e resgatar cerca de 5
+Decidi então aplicar R$500 distribuídos em dois títulos e resgatar cerca de 5
 meses depois. Desta forma, consigo verificar todas as taxas que incidem, usando
 pouco dinheiro.
 
@@ -15,13 +15,13 @@ Rico passa os seguintes valores para tesouro direto:
 - 0,10% de taxa de administração.
 - 0,3% ao ano, referente à taxa de custódia.
 
-Para transferir R$ 500 da minha conta corrento do Banco do Brasil para a conta
-da Rico, que também é um banco. Precisei realizar um TEDinternet, que custou R$
+Para transferir R$ 500 da minha conta corrente do Banco do Brasil para a conta
+da Rico, que também é um banco, precisei realizar um TEDinternet, que custou R$
 8,50.
 
 Um outro ponto de atenção é que após o depósito/transferência do dinheiro ser
 reconhecido pela Rico e cair na sua conta, compras de tesouro direto são
-liquidadas dois dias após compra. Minhas duas compras foram feitas no dia
+liquidadas dois dias após a compra. Minhas duas compras foram feitas no dia
 01/03/2016 e foram efetuadas no dia 02/03/2016, após as 17h. Dos R$500
 depositados, os seguintes débitos aparecem na minha conta:
 
@@ -30,7 +30,7 @@ depositados, os seguintes débitos aparecem na minha conta:
 | 02/03/2016    | 02/03	        | COMPRA TIT PUBLICOS TD 01/03/16	| -R$ 227,18  |	R$ 38,01  |
 | 02/03/2016    | 02/03         | COMPRA TIT PUBLICOS TD 01/03/16	| -R$ 234,81  | R$ 265,19 |
 
-Nesta primeira parte foi aplicado a taxa de 0.1% de taxa de administração. Ou
+Nesta primeira parte foi aplicada a taxa de 0,1% de taxa de administração. Ou
 seja, foi cobrado R$ 0,23 da primeira aplicação e mais R$ 0,23 centavos da
 segunda. As aplicações foram feitas nos seguintes títulos:
 
@@ -58,7 +58,7 @@ de minhas aplicações:
 | Total                 | R$ 461,53     | R$ 489,75           | R$ 482,76             |
 
 Considerando estes números sozinhos tenho que meu rendimento bruto foi de 6,1 %
-e meu rendimento líquido de 4,6 %. Isto corresponde a rendimento de 1,2 % ao mês
+e meu rendimento líquido de 4,6 %. Isto corresponde a um rendimento de 1,2 % ao mês
 e 0,9 % ao mês, respectivamente, considerando que se passaram 5 meses. Hoje a
 poupança está rendendo 0,75 % ao mês.
 
@@ -71,7 +71,7 @@ A ordem de venda foi realizada no dia 21/08/2016, um domingo.
 | 22/08/2016 | 22/08 | IR S/ TÍTULOS PÚBLICOS 21/08/16 | -R$ 3,21 | R$ 283,32 |
 | 22/08/2016 | 22/08 | VENDA TITLS.PUBL.-TD 21/08/16 | R$ 248,52 | R$ 286,53 |
 
-No extrato do meu banco, o crédito foi feito dia 23/08/2016, No valor de
+No extrato do meu banco, o crédito foi feito dia 23/08/2016, no valor de
 R$ 520,81. Segue o extrato completo, provido pela Rico:
 
 | Liquidação  |  Lançamento   |  Transação                                        |  Valor            |  Saldo      |
