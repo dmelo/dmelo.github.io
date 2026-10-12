@@ -1,5 +1,7 @@
 
 
+# git svn dcommit: "Merge conflict during commit: File or directory is out of date"
+
 Using git to work on a SVN repository is really great. Recently I ran into the following error while trying to run git svn dcommit:
 
 Merge conflict during commit: File or directory 'Monitor/public' is out of date; try updating: The version resource does not correspond to the resource within the transaction.  Either the requested version resource is out of date (needs to be updated), or the requested version resource is newer than the transaction root (restart the commit). at /usr/lib/git-core/git-svn line 579
