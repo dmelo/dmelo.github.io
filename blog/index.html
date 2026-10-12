@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Blog
 ---
 
@@ -21,20 +22,25 @@ title: Blog
 </ul>
 {% endif %}
 
-<h2>Archive</h2>
-
-{% assign archive = site.pages
-   | where_exp: "p", "p.url contains '/blog/'"
-   | where_exp: "p", "p.url != '/blog/'"
-   | where_exp: "p", "p.url != '/blog/index.html'"
-   | sort: "url" | reverse %}
+{% comment %}
+  drupal/blog is a symlink to blog/, so every post is also rendered under
+  /drupal/blog/; keep only URLs that start with /blog/.
+{% endcomment %}
+{% assign archive = "" | split: "" %}
+{% for p in site.pages %}
+  {% assign prefix = p.url | slice: 0, 6 %}
+  {% if prefix == '/blog/' and p.url != '/blog/' and p.url != '/blog/index.html' %}
+    {% assign archive = archive | push: p %}
+  {% endif %}
+{% endfor %}
+{% assign archive = archive | sort: "url" | reverse %}
 
 {% assign lastyear = "" %}
 {% for doc in archive %}
   {% assign yy = doc.url | remove_first: '/blog/' | split: '/' | first %}
   {% if yy != lastyear %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <h3>20{{ yy }}</h3>
+    <h2>20{{ yy }}</h2>
     <ul>
     {% assign lastyear = yy %}
   {% endif %}
