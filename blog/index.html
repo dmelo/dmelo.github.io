@@ -1,8 +1,43 @@
-    {% assign doclist = site.pages | sort: 'url'  %}
+---
+title: Blog
+---
+
+<p>
+  Notes on Linux, tooling and development — mostly "I hit this problem and here is how I
+  solved it". The archive below ran from 2009 to 2018 on a Drupal site that was later
+  migrated to Jekyll; the migration dropped the publication dates, so posts are grouped by
+  the year from their original URL.
+</p>
+
+{% if site.posts.size > 0 %}
+<h2>Recent</h2>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <small>{{ post.date | date: "%d/%m/%Y" }}</small>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h2>Archive</h2>
+
+{% assign archive = site.pages
+   | where_exp: "p", "p.url contains '/blog/'"
+   | where_exp: "p", "p.url != '/blog/'"
+   | where_exp: "p", "p.url != '/blog/index.html'"
+   | sort: "url" | reverse %}
+
+{% assign lastyear = "" %}
+{% for doc in archive %}
+  {% assign yy = doc.url | remove_first: '/blog/' | split: '/' | first %}
+  {% if yy != lastyear %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h3>20{{ yy }}</h3>
     <ul>
-       {% for doc in doclist %}
-            {% if doc.name contains '.md' or doc.name contains '.html' %}
-                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.url }}</a></li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+    {% assign lastyear = yy %}
+  {% endif %}
+  <li><a href="{{ doc.url | relative_url }}">{{ doc.title | default: doc.name }}</a></li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}
