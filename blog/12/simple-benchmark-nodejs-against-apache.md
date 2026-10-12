@@ -5,9 +5,9 @@ date: 2012-02-26
 
 # Simple Benchmark with Node.js against Apache
 
-Today I did a very basic benchmark and the result was impressive. For this benchmark I'm only interested on the overhead each web server creates to establish the connection, process the request and send the response.
+Today I did a very basic benchmark and the result was impressive. For this benchmark I'm only interested in the overhead each web server creates to establish the connection, process the request and send the response.
 
-First, a simple hello world program on node.js:
+First, a simple hello world program on Node.js:
 
     var http = require('http');
 
@@ -18,9 +18,9 @@ First, a simple hello world program on node.js:
 
     s.listen(8000);
 
-After run `node a.js` the result is available using the url [http://localhost:8000](http://localhost:8000)
+After running `node a.js` the result is available using the URL [http://localhost:8000](http://localhost:8000)
 
-For Apache a simple html file with nothing the the string `"hello world"` on it. The file is positioned on `/var/www` and can be accessed using the url [http://localhost/a.html](http://localhost/a.html).
+For Apache, a simple HTML file with nothing but the string `"hello world"` on it. The file is positioned on `/var/www` and can be accessed using the URL [http://localhost/a.html](http://localhost/a.html).
 
 I've used **ab** to run the benchmark. To be more specific, the command `ab -n 1000 -c 100 URL`. Here is the log for Apache:
 
@@ -81,7 +81,7 @@ I've used **ab** to run the benchmark. To be more specific, the command `ab -n 1
       99%     37
      100%     55 (longest request)
 
-And here is the output for Nodejs:
+And here is the output for Node.js:
 
     This is ApacheBench, Version 2.3 <$Revision: 655654 $>
     Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -138,6 +138,6 @@ And here is the output for Nodejs:
       99%     35
      100%     50 (longest request)
 
-As the logs shows, Apache takes about 10ms more time to process each request. Also on the factors longest request and +/- sd (variation) Nodejs beats Apache.
+As the logs show, Apache takes about 10ms more time to process each request. Also, on the factors longest request and +/- sd (variation), Node.js beats Apache.
 
-Of course, there is lot a lot more involved on this benchmark, like configuration options for each web server, possible processes not related to the benchmark being scheduled by my kernel and so on. But the truth is that today Nodejs won the battle agains Apache.
+Of course, there is a lot more involved in this benchmark, like configuration options for each web server, possible processes not related to the benchmark being scheduled by my kernel and so on. But the truth is that today Node.js won the battle against Apache.

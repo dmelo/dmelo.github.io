@@ -4,20 +4,20 @@
 
 Using namespaces also means that the file will "use" a number of classes from
 various namespaces. It is a good practice to keep it sorted, so it is easy to
-spot duplicates and to keep it organized. It can be easely achived in Vim with
+spot duplicates and to keep it organized. It can be easily achieved in Vim with
 the following command:
 
 ```viml
 :5,17!sort
 ```
 
-This will sort the lines, from 5 to 17. The `sort` is the actually a binary
-being called, so you could replace with anything, to get other results.
+This will sort the lines, from 5 to 17. The `sort` is actually a binary
+being called, so you could replace it with anything, to get other results.
 
 ## CTags, Lint and Code Sniffer
 
-Install ctags and phpcs on your system. After that, add the following snippet,
-on your `~/.vimrc` (make where there is nothing mapped to F2, F3 and F4 yet):
+Install ctags and phpcs on your system. After that, add the following snippet
+to your `~/.vimrc` (make sure there is nothing mapped to F2, F3 and F4 yet):
 
 ```viml
 set bg=dark
@@ -61,14 +61,14 @@ command! CheckSyntax execute RunCheckSyntax()
 command! PhpCTags execute RunCTags()
 ```
 
-The first block, set background color to dark, automatic indentation, count
-lines, set shift width for 4 spaces, convert tags into 4 spaces and highlight
+The first block sets background color to dark, automatic indentation, line
+numbers, shift width to 4 spaces, converts tabs into 4 spaces and highlights
 syntax.
 
 Then, we map F2, F3 and F4 to CTags, PHP lint and Code Sniffer, respectively.
 [CTags](https://en.wikipedia.org/wiki/Ctags) will scan the PHP files looking for
 classes and function names, to use on the autocomplete (ctrl+p). 
 [PHP Lint](http://php.net/manual/en/function.php-check-syntax.php)
-scan for syntax errors on the current file
-and Code Sniffer check if the code is following
+scans for syntax errors in the current file
+and Code Sniffer checks if the code is following the
 [PSR2](http://www.php-fig.org/psr/psr-2/) coding style guide.

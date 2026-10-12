@@ -2,9 +2,9 @@
 
 # C++ - Timer
 
-Do you know there times when you just want to measure the time that some peace of code takes to run? And then you have to think about gettimeofday, timezone, timeval and so on...
+Do you know those times when you just want to measure the time that some piece of code takes to run? And then you have to think about gettimeofday, timezone, timeval and so on...
 
-I just wrote a class that do all the work. You call start() when you want to start the timer and end(), to stop it. You can take the diff, between start and end, as an `struct timeval` or just transform the result to string and throw it to cout...
+I just wrote a class that does all the work. You call start() when you want to start the timer and end() to stop it. You can take the diff, between start and end, as a `struct timeval` or just transform the result into a string and throw it to cout...
 
 The class is timer. Here is the header, [timer.h](/files/timer.h):
 
@@ -36,7 +36,7 @@ The class is timer. Here is the header, [timer.h](/files/timer.h):
     #endif // TIMER_H
 
 
-Now the [timer.cpp](/files/timer.cpp)
+Now the [timer.cpp](/files/timer.cpp):
 
     #include"timer.h"
 
@@ -95,7 +95,7 @@ Now the [timer.cpp](/files/timer.cpp)
 
 
 
-At the last... an example of how to use it. The [main.cpp](/files/main.cpp)
+At last... an example of how to use it. The [main.cpp](/files/main.cpp):
 
     #include"timer.h"
     #include<iostream>

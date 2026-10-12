@@ -2,7 +2,7 @@
 
 # Mount Image as Device
 
-I have a lot of images from backup of projects I have worked with. Sometimes I
+I have a lot of images from backups of projects I have worked on. Sometimes I
 need to mount one of those images to get some file. I used `losetup` to get the
 /dev/loopX device file and then I was trying to use `kpartx` to map the
 partitions inside that device file. `kpartx` was giving the following error:

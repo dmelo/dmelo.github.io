@@ -1,8 +1,8 @@
 DEPRECATED
 ==========
 
-This project has been moved to [dmelo/vswn](https://github.com/dmelo/vswm).
-Considering it deals only with wireless networks, it seem suitable to rename
+This project has been moved to [dmelo/vswm](https://github.com/dmelo/vswm).
+Considering it deals only with wireless networks, it seemed suitable to rename
 it to VSWM - Very Simple Wireless Manager.
 
 
@@ -11,8 +11,8 @@ it to VSWM - Very Simple Wireless Manager.
 VSNM - Very Simple Network Manager
 ==================================
 
-As the name suggests it manages the network in a very simplistic way. This 
-version have wifi WPA and WEP, with dhcp and static networks. To use it, just 
+As the name suggests, it manages the network in a very simplistic way. This 
+version has wifi WPA and WEP, with dhcp and static networks. To use it, just 
 place the vsnm.cfg file at /etc/ and add there your existing networks. When you
 call the script (without any argument) it will scan the available networks and
 connect you to the first available network that appears on the cfg file.
@@ -21,9 +21,9 @@ connect you to the first available network that appears on the cfg file.
 DOWNLOAD
 --------
 
-VSNM can be found at GitHub
+VSNM can be found on GitHub
 [https://github.com/dmelo/vsnm](https://github.com/dmelo/vsnm). A ZIP file can
-be found on the link
+be found at the link
 [https://github.com/dmelo/vsnm/archive/master.zip](https://github.com/dmelo/vsnm/archive/master.zip).
 
 
@@ -34,11 +34,11 @@ INSTALL
     cp vsnm.cfg /etc/
 
 Make sure `/usr/local/bin` is in your $PATH. Copy the following line into your
-.bashrc file (or /etc/bashrc, or /etc/profile)
+.bashrc file (or /etc/bashrc, or /etc/profile):
 
     export PATH=/usr/local/bin:$PATH
 
-Reload the `.bashrc`
+Reload the `.bashrc`:
 
     source ~/.bashrc
 

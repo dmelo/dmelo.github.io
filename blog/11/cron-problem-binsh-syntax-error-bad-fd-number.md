@@ -2,7 +2,7 @@
 
 # Cron Problem - /bin/sh: Syntax error: Bad fd number
 
-Today I find out an interesting fact. Cron doesn't like ">&" at all. Here is an example of a problematic cron line:
+Today I found out an interesting fact. Cron doesn't like ">&" at all. Here is an example of a problematic cron line:
 
     * * * * * echo aaa >& /tmp/test.out
 
@@ -14,4 +14,4 @@ Or you can redirect the error through some other way:
 
     * * * * * echo aaa 2>&1 > /tmp/test.out
 
-The last two cron line samples will work perfectly. The difference between then is that last cron line redirects both output and error to the file /tmp/test.out, while the previous line redirects only the output to the file.
+The last two cron line samples will work perfectly. The difference between them is that the last cron line redirects both output and error to the file /tmp/test.out, while the previous line redirects only the output to the file.

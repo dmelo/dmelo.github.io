@@ -2,7 +2,7 @@
 
 # You2Better
 
-It's been a while that [Amuzi](http://amuzi.me) uses You2Better to stream audio
+It's been a while since [Amuzi](http://amuzi.me) started using You2Better to stream audio
 content from YouTube. I have recently upgraded the documentation on You2Better
 to make it easier for other developers to take advantage of You2Better.
 
@@ -16,7 +16,7 @@ docker run -p 8888:8888 dmelo/you2better
 ```
 
 It works because I have linked the GitHub repo
-[dmelo/you2better](https://github.com/dmelo/you2better) to the docker image
+[dmelo/you2better](https://github.com/dmelo/you2better) to the Docker image
 on Docker Hub [dmelo/you2better](https://hub.docker.com/r/dmelo/you2better/).
 
 When You2Better is running locally, you can download the audio files by
@@ -26,16 +26,16 @@ accessing URLs like:
 wget http://localhost:8888/?youtubeid=meT2eqgDjiM -O PomplamooseMusic_Beat_it.m4a
 ```
 
-Under the hoods
----------------
+Under the hood
+--------------
 
-All that You2Better need is the YouTube ID of the video. It uses
-[rg3/youtube-dl](https://github.com/rg3/youtube-dl) to get meta data about the
+All that You2Better needs is the YouTube ID of the video. It uses
+[rg3/youtube-dl](https://github.com/rg3/youtube-dl) to get metadata about the
 video, select the audio stream and download it.
 
-When an URL like `http://localhost:8888/?youtubeid=meT2eqgDjiM` is requested,
-You2Better starts downloading the file from YouTube and immediately stream it
-to the client of the request. Also, it stores the file on cache, to speed up
+When a URL like `http://localhost:8888/?youtubeid=meT2eqgDjiM` is requested,
+You2Better starts downloading the file from YouTube and immediately streams it
+to the client of the request. Also, it stores the file in cache, to speed up
 next requests.
 
 It supports [HTTP Range Requests](https://tools.ietf.org/html/rfc7233), which

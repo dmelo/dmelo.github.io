@@ -1,8 +1,8 @@
 
 
-# Setting header parameters on apache using htaccess - error 500 Internal server error
+# Setting header parameters on Apache using htaccess - error 500 Internal server error
 
-The first post of the year is about an error that I got while trying to set header parameters from htaccess. The intention is to make leverage browser caching on some objects of [dicno.net](http://dicno.net).
+The first post of the year is about an error that I got while trying to set header parameters from htaccess. The intention is to leverage browser caching on some objects of [dicno.net](http://dicno.net).
 
 The syntax to set cache (or any other header parameter) is quite simple.
 
@@ -10,15 +10,15 @@ The syntax to set cache (or any other header parameter) is quite simple.
     Header set Cache-Control "max-age=604800, public"
     </FilesMatch>
 
-This lines on the .htaccess should set a cache of one week for all elements that ends with .js, .ico, .gif and so on...
+These lines on the .htaccess should set a cache of one week for all elements that end with .js, .ico, .gif and so on...
 
-However, I was getting the error number 500 Internal server error. I took a look into /var/log/apache2/error.log, to see more details about that error. It was saying:
+However, I was getting the error number 500 Internal server error. I took a look at /var/log/apache2/error.log, to see more details about that error. It was saying:
 
     [Sun Jan 03 14:08:47 2010] [alert] [client 127.0.0.1] /var/www/dicno/public_html/.htaccess: Invalid command 'Header', perhaps misspelled or defined by a module not included in the server configuration
 
-The error log suggests that some module is missing and that's exactly what was happening. The module headers is not enabled by default on Apache. So, we have to enable it manually.
+The error log suggests that some module is missing and that's exactly what was happening. The headers module is not enabled by default on Apache. So, we have to enable it manually.
 
-To enable this module, log in as root, and create a symbolic link from mods-available/headers.load to mods-enabled. After that, reload apache and it's done. To do so, I've used this commands.
+To enable this module, log in as root, and create a symbolic link from mods-available/headers.load to mods-enabled. After that, reload Apache and it's done. To do so, I've used these commands.
 
     su -
     cd /etc/apache2/mods-enabled/

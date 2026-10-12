@@ -7,7 +7,7 @@ join the Docker Swarm.
 
 ## EC2 Instance
 
-I used Fedora 25, 64 bits, HVM, EBS based the Cloud version (not the Atomic
+I used Fedora 25, 64 bits, HVM, EBS-based, the Cloud version (not the Atomic
  one).
 
 Make sure this machine is accessible from the other managers/workers on the
@@ -29,19 +29,19 @@ packages:
 dnf update -y
 ```
 
-If Kernel was also updated, then reboot the machine. After that, follow the
+If the kernel was also updated, then reboot the machine. After that, follow the
 steps described on
 [Get Docker for Fedora](https://docs.docker.com/engine/installation/linux/fedora/#prerequisites).
 
 ## Joining the Swarm
 
-Make sure you enable and start Docker daemon:
+Make sure you enable and start the Docker daemon:
 
 ```bash
 systemctl enable docker && systemctl start docker
 ```
 
-To join the Swarm, beside the basic parameters also specify `listen-addr` and
+To join the Swarm, besides the basic parameters also specify `listen-addr` and
 `advertise-addr`, where the former may be `0.0.0.0` (so that it can listen on
 all interfaces) and the latter is the instance's public IP:
 

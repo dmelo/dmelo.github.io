@@ -3,7 +3,7 @@
 # PHP: array\_key\_exists vs. isset
 
 First, the basics. Let's say you want to verify if `$foo['bar']` is set. You
-can use either functions:
+can use either function:
 
     array_key_exists('bar', $foo);
     isset($foo['bar']);
@@ -14,10 +14,10 @@ The differences between those functions are:
 for arrays, while `isset` can work with other var types as well;
 2. `isset` does not return true if the array value is null (i.e.: if you have
 `$foo['bar'] = NULL`,  `array_key_exists($foo['bar'])` will return true while
-`isset($foo['bar'])` will return false.
+`isset($foo['bar'])` will return false);
 3. `isset` is MUCH FASTER than `array_key_exists` (about 5.6 x 1).
 
-Bellow is the script to test all my claims:
+Below is the script to test all my claims:
 
     <?php
 
@@ -55,7 +55,7 @@ Bellow is the script to test all my claims:
     $finish = microtime(true);
     echo "isset: " . ($finish - $start) . " seconds " . PHP_EOL;
  
-I am using PHP 5.6.13. When I ran that script on my computer, I've got the
+I am using PHP 5.6.13. When I ran that script on my computer, I got the
 following output:
 
     Similar behaviour: 

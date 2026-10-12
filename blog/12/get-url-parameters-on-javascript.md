@@ -1,10 +1,10 @@
 
 
-# Get URL parameters on Javascript
+# Get URL parameters on JavaScript
 
 In PHP there is the global var `$_GET` that contains a map of all the get
 parameters on the requested URL. I needed something similar to work with
-Javascript. I found this post [http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery](http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery)
+JavaScript. I found this post [http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery](http://stackoverflow.com/questions/1403888/get-url-parameter-with-jquery)
 that solved my problem.
 
 The function that performs the job fairly well is as follows:

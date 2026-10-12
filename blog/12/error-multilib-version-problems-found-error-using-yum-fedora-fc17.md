@@ -2,7 +2,7 @@
 
 # Multilib version problems found -- Error using yum on Fedora fc17
 
-I was trying to install wine on my Fedora fc17 and getting this error message:
+I was trying to install Wine on my Fedora fc17 and getting this error message:
 
     Error:  Multilib version problems found. This often means that the root
            cause is something else and multilib version checking is just

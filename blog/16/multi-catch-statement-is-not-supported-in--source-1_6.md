@@ -2,7 +2,7 @@
 
 # multi-catch statement is not supported in -source 1.6
 
-On a project I'm working, I tried to use multi-catch statement, something like this:
+On a project I'm working on, I tried to use a multi-catch statement, something like this:
 
 ```java
 try {
@@ -12,7 +12,7 @@ try {
 }
 ```
 
-When building with maven `mvn clean install`, it gave the the following error:
+When building with Maven `mvn clean install`, it gave the following error:
 
 ```
 [ERROR] COMPILATION ERROR : 
@@ -23,8 +23,8 @@ When building with maven `mvn clean install`, it gave the the following error:
 [INFO] -------------------------------------------------------------
 ```
 
-After seeing this, my question was: how to specify the version compatibility
-version to use? The answer is ADD a new plugin on the pom.xml like this:
+After seeing this, my question was: how to specify the compatibility
+version to use? The answer is to ADD a new plugin to the pom.xml like this:
 
 ```xml
 <?xml version="1.0"?>
