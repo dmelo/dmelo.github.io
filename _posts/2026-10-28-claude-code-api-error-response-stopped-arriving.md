@@ -1,3 +1,9 @@
+---
+title: "Claude Code: Handling the error \"API Error: The response stopped arriving\""
+date: 2026-10-28
+permalink: /blog/26/claude-code-api-error-response-stopped-arriving.html
+---
+
 # Claude Code: Handling the error `API Error: The response stopped arriving. The response above may be incomplete.`
 
 ## The problem
