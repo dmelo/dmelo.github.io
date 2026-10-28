@@ -156,3 +156,4 @@ http://diogomelo.net/blog/15/using-dd-and-lzma-to-backup-and-restore-a-disk
 http://diogomelo.net/blog/15/grep-binary-file-standard-input-matches
 http://diogomelo.net/blog/15/.vimf-shortcut-to-open-files.md.swp
 http://diogomelo.net/blog/15/how-i-solved-when-my-printing-was-too-weak-and-light
+http://diogomelo.net/blog/26/claude-code-api-error-response-stopped-arriving
